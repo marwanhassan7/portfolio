@@ -1,28 +1,41 @@
 # Marwan Hassan — Portfolio 🎬
 
-A single-file animated portfolio where the hero cartoon plays like a short looping video.
+A single-file animated portfolio where the hero cartoon plays like a short looping video. Built with plain HTML + CSS + JavaScript — no frameworks, no build step.
 
 ## What's animated
 
 - **Blinking eyes** with pupil drift and eyebrow raises
-- **Typing hands** in a two-tap key-press cycle with arm sway
+- **Typing hands** with arm sway and a gentle **laptop jitter**
 - **Breathing torso** and gentle head bobbing
-- **Light sweep** gliding across the laptop screen
-- **Swaying plant leaves** (5 leaves, staggered phases)
-- **Rising mug steam** and **drifting code symbols** (`</>`, `{ }`, `=>`, `( )`)
-- **Pointer + scroll parallax** — the character and the giant "MARWAN" ghost text move at different depths
-- Soft ambient light gradient behind the scene
+- **Floating code editor** that types out real snippets (Express, React, Docker) on a loop with a blinking caret
+- **Swaying plant leaves** (staggered phases) and **rising mug steam**
+- **Drifting code symbols** (`</>`, `{ }`, `=>`, `( )`) and a dashed connector line
+- **Rotating "SAY HELLO" badge** on the contact section
+- Scroll progress bar, animated section reveals, and a flip-to-back ID card
 
 Everything respects `prefers-reduced-motion` (animations disable automatically).
 
+## Sections
+
+1. **About** — bio + flip ID card + quick facts
+2. **Skills** — interactive periodic table of the stack (filter by family, hover a tile for details)
+3. **Practice** — hands-on IT & support skills
+4. **Selected work** — expandable project panels (MediGuard, Equipment Handover, Guest Hotspot, ZK Push Proxy, AWS Monitoring, E-Commerce, Task Manager)
+5. **Certifications** — 7 certifications + professional development
+6. **Experience** — education & work timeline
+7. **Contact** — email, phone, LinkedIn
+
+Responsive for both phone and desktop.
+
 ## Run locally
 
-Open `portfolio.html` directly in a browser, or serve the folder:
+Open `index.html` directly in a browser, or serve the folder:
 
 ```bash
 npx serve .
 ```
 
-## Tech
+## Deploy
 
-Plain HTML + CSS + JavaScript — no frameworks, no build step. Fonts via Google Fonts.
+Published with GitHub Pages from this repo's `main` branch (root). The live site is at the repo's Pages URL.
+

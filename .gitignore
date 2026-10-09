@@ -1,2 +1,8 @@
 *.bak
-_check.js
+_check*.js
+node_modules/
+_shot.js
+_preview.html
+*.png
+!marwan-portrait-white.png
+
