@@ -123,13 +123,13 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);font-size:14px;color
 .hero svg{-webkit-mask-image:linear-gradient(90deg,transparent,#000 2%,#000 98%,transparent),linear-gradient(180deg,#000 86%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 2%,#000 98%,transparent),linear-gradient(180deg,#000 86%,transparent);mask-composite:intersect}
 @media(max-width:700px){.hero{display:flex;align-items:center}.hero .w{width:100%}}
 .hero svg .lap{animation:lp .15s ease-in-out infinite alternate}@keyframes lp{to{transform:translateY(-.9px)}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv,.t{opacity:1;transform:none}.badge,.hero svg *{animation:none!important}.ct span{transition:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv,.t{opacity:1;transform:none}.badge{animation:none}}
 </style></head><body>
 <div id="bar"></div>
 <nav><a class="mark" href="#top"><b>MH</b><span>Marwan Hassan</span></a>
-<div class="pill" id="pill"><span id="ind"></span><a href="#about">About</a><a href="#skills">Skills</a><a href="#practice">Practice</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+<div class="pill" id="pill"><span id="ind"></span><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#practice">Practice</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
 <button class="btn p" id="menuBtn" aria-expanded="false">Menu</button></nav>
-<div id="ov" aria-hidden="true"><a href="#about"><small>01</small>About</a><a href="#skills"><small>02</small>Skills</a><a href="#practice"><small>03</small>Practice</a><a href="#work"><small>04</small>Work</a><a href="#experience"><small>06</small>Experience</a><a href="#contact"><small>07</small>Contact</a></div>
+<div id="ov" aria-hidden="true"><a href="#about"><small>01</small>About</a><a href="#skills"><small>02</small>Skills</a><a href="#work"><small>03</small>Work</a><a href="#practice"><small>05</small>Practice</a><a href="#experience"><small>06</small>Experience</a><a href="#contact"><small>07</small>Contact</a></div>
 
 <main id="top">
 <header class="hero"><div class="ghost" aria-hidden="true">MARWAN</div><div class="w">
@@ -193,11 +193,11 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);font-size:14px;color
 <div class="sk" id="pt"><div><div class="chips" id="chips"></div><div id="grid"></div></div>
 <aside id="insp" aria-live="polite"><div class="big">Hover</div><p>a tile to see the family and the projects that use it.</p></aside></div></div></section>
 
-<section id="practice"><div class="w"><div class="tag rv">03 — Practice</div><h2 class="rv">How I put skills to <i>work.</i></h2><div id="prac" class="pc"></div></div></section>
+<section id="work"><div class="w"><div class="tag rv">03 — Selected work</div><h2 class="rv">Things I've <i>built.</i></h2><div class="wk" id="wk"></div></div></section>
 
-<section id="work"><div class="w"><div class="tag rv">04 — Selected work</div><h2 class="rv">Things I've <i>built.</i></h2><div class="wk" id="wk"></div></div></section>
+<section id="certs" class="band2"><div class="w"><div class="cs"><div class="l rv"><div class="tag">04 — Certifications</div><h2 style="margin-bottom:16px">Always <i>learning.</i></h2><p class="mono" style="font-size:13px;color:var(--mute)">7 certifications</p></div><div id="cl"></div></div></div></section>
 
-<section id="certs" class="band2"><div class="w"><div class="cs"><div class="l rv"><div class="tag">05 — Certifications</div><h2 style="margin-bottom:16px">Always <i>learning.</i></h2><p class="mono" style="font-size:13px;color:var(--mute)">7 certifications</p></div><div id="cl"></div></div></div></section>
+<section id="practice"><div class="w"><div class="tag rv">05 — Practice</div><h2 class="rv">How I <i>work.</i></h2><div id="prac" class="pc"></div></div></section>
 
 <section id="experience"><div class="w"><div class="tag rv">06 — Experience</div><h2 class="rv">Education and work, <i>one path.</i></h2>
 <div class="tl" id="tl"><div id="sp2"></div></div></div></section>
@@ -210,7 +210,7 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);font-size:14px;color
 <footer><div class="w"><span>© 2026 Marwan Hassan</span><a href="#top">Back to top</a></div></footer>
 
 <script>
-const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],RM=false;
 const SK=[["React","Re","Frontend",["E-Commerce Web Platform","Task Management System","Equipment Handover"]],["JavaScript","Js","Frontend",["Equipment Handover","ZK Push Proxy"]],["HTML5","Ht","Frontend",[]],["CSS3","Cs","Frontend",[]],["Node.js","No","Backend",["MediGuard","E-Commerce Web Platform","Task Management System","Equipment Handover"]],["Express.js","Ex","Backend",["MediGuard"]],["REST APIs","Ap","Backend",["MediGuard"]],["Hyperledger Fabric","Hf","Backend",["MediGuard"]],["Python","Py","Languages",["AWS Cloud Monitoring & Alert System","ZK Push Proxy"]],["Java","Jv","Languages",[]],["C#","C#","Languages",["Guest Hotspot"]],["Bash","Ba","Languages",[]],["PHP","Ph","Languages",[]],["SQL","Sq","Databases",[]],["MongoDB","Mo","Databases",["E-Commerce Web Platform","Task Management System"]],["DynamoDB","Dy","Databases",[]],["Docker","Do","DevOps",["MediGuard","Equipment Handover"]],["Git & GitHub","Gi","DevOps",[]],["GitLab CI","Gl","DevOps",[]],["AWS","Aw","DevOps",["AWS Cloud Monitoring & Alert System"]],["Odoo","Od","DevOps",["Equipment Handover","ZK Push Proxy"]],["Postman","Po","DevOps",[]],["VS Code","Vs","DevOps",[]],["Windows","Wi","Systems",[]],["Linux","Li","Systems",[]],["Ubuntu","Ub","Systems",[]],["n8n","n8","Automation",[]],["PowerShell","Ps","Languages",["Guest Hotspot"]],[".NET","Nt","Backend",["Guest Hotspot"]],["WPF","Wp","Frontend",["Guest Hotspot"]],["Flask","Fl","Backend",["ZK Push Proxy"]],["SQLite","Sl","Databases",["ZK Push Proxy"]],["Vite","Vt","Frontend",["Equipment Handover"]],["PWA","Pw","Frontend",["Equipment Handover"]],["Webhooks","Wh","Backend",["Equipment Handover","ZK Push Proxy"]],["Windows Filtering Platform","Wf","Security",["Guest Hotspot"]],["Render","Rn","DevOps",["Equipment Handover"]],["Railway","Rw","DevOps",["Equipment Handover"]],["JWT","Jw","Security",["MediGuard"]],["AES-256","Ae","Security",["MediGuard"]],["Wireshark","Ws","Networking",[]],["TCP/IP","Ip","Networking",[]],["DNS","Dn","Networking",[]],["LAN/Wi-Fi","Lw","Networking",[]],["Routing & Switching","Rs","Networking",[]],["Automated Testing","At","DevOps",[]],["Deployment Pipelines","Dp","DevOps",[]],["Database Lifecycle Management","Dl","Databases",[]],["Microsoft Office & Teams","Ms","DevOps",[]],];
 const FAM=["All",...new Set(SK.map(s=>s[2]))],grid=$('#grid'),insp=$('#insp');let fam="All";
 SK.forEach((s,i)=>{const b=document.createElement('button');b.className='t';b.style.setProperty('--d',((Math.floor(i/8)+i%8)*40)+'ms');b.innerHTML=`<small>${i+1}</small><b>${s[1]}</b><span>${s[0]}</span>`;b.dataset.f=s[2];
@@ -229,14 +229,14 @@ $('#cl').insertAdjacentHTML('beforeend','<p class="mono" style="font-size:12px;c
 const E=[["2016 – 2020", "American Diploma (SAT)", "Egyptian Language School, Cairo, Egypt", []], ["Oct 2020 – Apr 2023", "IT Developer", "Grow Group Healthcare Solutions, Egypt", ["Assisted in building and maintaining web applications using HTML, CSS, and JavaScript", "Supported backend integration and API testing using Postman", "Contributed to debugging and improving existing application features", "Participated in Agile team meetings and sprint planning sessions"]], ["2023 – 2026", "Bachelor (Hons) in Computer Science with Specialism in Cyber Security", "Asia Pacific University, Kuala Lumpur, Malaysia", []], ["May 2025 – Aug 2025", "Full Stack Developer", "Netmedias Leashares Sdn Bhd, Malaysia", ["Developed scalable web applications using React.js and Node.js in Agile environment", "Designed and implemented RESTful APIs for seamless frontend-backend communication", "Built reusable UI components improving development efficiency and consistency", "Integrated JWT authentication for secure user login and session management", "Optimized application performance, reducing load time by 35% through code and query improvements", "Collaborated with designers and backend engineers to deliver end-to-end features"]], ["Jul 2026 – Present", "IT System Administration (IT Manager)", "Mu Store, Male, Maldives", ["Managed Odoo administration, maintenance and development, improving workflows and resolving system issues", "Developed mobile applications and services integrated with Odoo for internal operations", "Built a BioTime proxy server to synchronize attendance data between Odoo and BioTime", "Managed network infrastructure, IT systems, hardware and software across store operations", "Improved system monitoring and maintenance while developing a centralized network and device tracking system"]]];
 const tl=$('#tl');E.forEach(e=>{const s=document.createElement('div');s.className='st';s.innerHTML=`<small>${e[0]}</small><h3>${e[1]}</h3><div class="pl">${e[2]}</div>${e[3].length?'<ul>'+e[3].map(x=>`<li>${x}</li>`).join('')+'</ul>':''}`;tl.append(s)});
 tl.insertAdjacentHTML('beforeend','<div class="nx">Next — <i>Your team?</i></div>');
-const ct=$('#ct');ct.innerHTML=ct.innerHTML.split('<br>').map(l=>l.split(' ').map(w=>`<b style="font-weight:inherit;white-space:nowrap">${[...w].map(c=>`<span aria-hidden="true">${c}</span>`).join('')}</b>`).join(' ')).join('<br>');
+const ct=$('#ct');ct.innerHTML=ct.innerHTML.split('<br>').map(l=>[...l].map(c=>c==' '?' ':`<span aria-hidden="true">${c}</span>`).join('')).join('<br>');
 $('#cpy').onclick=()=>{try{navigator.clipboard.writeText('Marwan-walid@outlook.my')}catch(e){}$('#cps').textContent='Copied ✓';setTimeout(()=>$('#cps').textContent='',1800)};
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 $$('.rv,.t').forEach((el,i)=>{if(el.classList.contains('rv'))el.style.setProperty('--i',i%4);io.observe(el)});
 const links=$$('#pill a'),ind=$('#ind');
 function mv(a){if(!a)return;links.forEach(l=>l.classList.toggle('on',l==a));ind.style.width=a.offsetWidth+'px';ind.style.transform=`translateX(${a.offsetLeft}px)`}
 const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const a=links.find(l=>l.getAttribute('href')=='#'+e.target.id);if(a)mv(a)}}),{rootMargin:'-45% 0px -50% 0px'});
-['about','skills','practice','work','experience','contact'].forEach(id=>so.observe($('#'+id)));
+['about','skills','work','practice','experience','contact'].forEach(id=>so.observe($('#'+id)));
 const stops=$$('.st'),sp2=$('#sp2');
 function sc(){const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;$('#bar').style.width=(y/h*100)+'%';document.body.classList.toggle('sc',y>40);
 const r=tl.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.6-r.top)/r.height));sp2.style.height=(p*100)+'%';
